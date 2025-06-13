@@ -85,7 +85,7 @@ const Registration = () => {
           setSignupData(initialValue);
           setTimeout(() => {
             navigate('/login');
-          }, 3000);
+          }, 1000);
         }
       } catch (error) {
         const errMsg = error.response?.data?.message || 'Registration failed!';

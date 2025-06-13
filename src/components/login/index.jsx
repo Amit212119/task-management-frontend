@@ -63,7 +63,7 @@ const Login = () => {
           setLoginData(initialValue);
           setTimeout(() => {
             navigate('/');
-          }, 3000);
+          }, 1000);
         }
       } catch (error) {
         const errMsg = error.response?.data?.message || 'Login failed!';

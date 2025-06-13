@@ -18,12 +18,12 @@ const Home = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        'http://localhost:4000/user/logout',
+        `${import.meta.env.VITE_BACK_API_URL}/user/logout`,
         {},
         { withCredentials: true }
       );
       toast.success('Logged out successfully!');
-      setTimeout(() => navigate('/login'), 2000);
+      setTimeout(() => navigate('/login'), 1000);
     } catch (err) {
       toast.error('Logout failed!', err);
     }
