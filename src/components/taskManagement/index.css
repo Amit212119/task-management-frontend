@@ -90,7 +90,7 @@
   color: #2f3542;
 }
 
-.taskItem button {
+.deleteButton {
   margin-left: 10px;
   background-color: #ff6b81;
   color: white;
@@ -100,9 +100,22 @@
   font-size: 0.9rem;
   cursor: pointer;
 }
+.editButton {
+  margin-left: 10px;
+  background-color: #7bbf36;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
 
-.taskItem button:hover {
+.deleteButton:hover {
   background-color: #ff4757;
+}
+.editButton:hover {
+  background-color: #a7c38c;
 }
 
 .taskCheckbox {

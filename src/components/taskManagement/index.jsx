@@ -10,7 +10,6 @@ const Task = () => {
   const [description, setDesc] = useState('');
   const [editTaskId, setEditTaskId] = useState(null); // ✅ Track editing
 
-  // ✅ Fetch tasks
   const fetchTasks = async () => {
     try {
       const res = await axios.get(
@@ -124,7 +123,6 @@ const Task = () => {
               key={task._id}
               className={`taskItem ${task.completed ? 'completed' : ''}`}
             >
-              {/* ✅ Checkbox to toggle complete */}
               <input
                 type="checkbox"
                 checked={task.completed}
@@ -132,15 +130,13 @@ const Task = () => {
                 className="taskCheckbox"
               />
 
-              {/* ✅ Title & Description */}
               <span>
                 <span className="title">{task.title}</span> - {task.description}
               </span>
 
-              {/* ✅ Action Buttons */}
               <div>
-                <button onClick={() => editTask(task)}>✏️ Edit</button>
-                <button onClick={() => deleteTask(task._id)}>❌ Delete</button>
+                <button onClick={() => editTask(task)} className='editButton'> Edit</button>
+                <button onClick={() => deleteTask(task._id)} className='deleteButton'> Delete</button>
               </div>
             </li>
           ))}

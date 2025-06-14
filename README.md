@@ -1,12 +1,63 @@
-# React + Vite
+# 📝 Task Management App - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** of a full-stack Task Management application built with **React.js** and **Vite**. It allows users to register, log in, log out, and manage their tasks efficiently.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🌐 Frontend: [https://task-management-frontend-eight-pi.vercel.app](https://task-management-frontend-eight-pi.vercel.app)  
+🌐 Backend: [https://task-management-backend-production-7e2b.up.railway.app](https://task-management-backend-production-7e2b.up.railway.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔧 Features
+
+- ✅ User Registration
+- ✅ User Login with JWT (via cookies)
+- ✅ Protected Routes
+- ✅ Logout
+- ✅ Create, Edit, Delete Tasks
+- ✅ Responsive UI
+- ✅ Error Handling with Toast Notifications
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js (Vite)
+- Axios
+- React Router DOM
+- React Toastify
+- JWT (handled via HTTP-only cookies)
+
+---
+
+## 📁 Folder Structure
+
+task-management-frontend/
+├── public/
+├── src/
+│ ├── components/ # Reusable UI components (e.g., Navbar)
+│ ├── register/
+│ │ ├── index.js # Registration page logic
+│ │ └── index.css # Styles for register page
+│ ├── login/
+│ │ ├── index.js
+│ │ └── index.css
+│ ├── home/
+│ │ ├── index.js # Task management UI
+│ │ └── index.css
+│ ├── services/ # API service functions (e.g., axios)
+│ ├── App.jsx
+│ └── main.jsx
+├── .env
+├── package.json
+└── vite.config.js
+
+Install dependencies
+npm install
+
+
+Run the app
+npm run dev
